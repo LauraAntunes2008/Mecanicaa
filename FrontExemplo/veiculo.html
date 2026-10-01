@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veículos</title>
+</head>
+<body>
+
+    <h1>Cadastro de Veículos</h1>
+
+    <form id="formVeiculo">
+
+        <input type="text" id="placa" placeholder="Placa" required>
+
+        <input type="text" id="marca" placeholder="Marca" required>
+        <input type="text" id="modelo" placeholder="Modelo" required>
+        <input type="number" id="ano" placeholder="Ano" required>
+        <input type="text" id="cor" placeholder="Cor" required>
+        <select id="id_cliente" required>
+            <option value="">Selecione o cliente</option>
+        </select>
+
+        <button type="submit">Cadastrar Veículo</button>
+
+    </form>
+
+    <h2>Veículos cadastrados</h2>
+
+    <table border="1">
+
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Placa</th>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Ano</th>
+                <th>Cor</th>
+                <th>Proprietário</th>
+                <th>Gerenciar</th>
+            </tr>
+        </thead>
+
+        <tbody id="corpo"></tbody>
+
+    </table>
+
+
+    <br>
+
+    <a href="./index.html">
+        <button>Voltar</button>
+    </a>
+
+
+    <script src="./scriptveiculo.js"></script>
+
+</body>
+</html>

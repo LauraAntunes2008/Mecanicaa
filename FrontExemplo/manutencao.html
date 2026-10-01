@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manutenções</title>
+</head>
+<body>
+
+    <h1>Cadastro de Manutenção</h1>
+
+    <form id="formManutencao">
+
+        <select id="id_veiculo" required>
+            <option value="">Selecione o veículo</option>
+        </select>
+
+        <input type="date" id="data_entrada" required>
+
+        <input
+            type="text"
+            id="descricao_problema"
+            placeholder="Descrição do problema"
+            required
+        >
+
+        <input
+            type="text"
+            id="tipo_servico"
+            placeholder="Tipo de serviço"
+            required
+        >
+
+        <select id="situacao" required>
+            <option value="aguardando">Aguardando</option>
+            <option value="em andamento">Em andamento</option>
+            <option value="concluída">Concluída</option>
+        </select>
+
+        <input
+            type="number"
+            id="valor"
+            placeholder="Valor"
+            step="0.01"
+            required
+        >
+
+        <input type="date" id="data_entrega">
+
+        <button type="submit">
+            Cadastrar Manutenção
+        </button>
+
+    </form>
+
+
+    <h2>Manutenções cadastradas</h2>
+
+    <table border="1">
+
+        <thead>
+
+            <tr>
+                <th>ID</th>
+                <th>Veículo</th>
+                <th>Data de entrada</th>
+                <th>Problema</th>
+                <th>Serviço</th>
+                <th>Situação</th>
+                <th>Valor</th>
+                <th>Data de entrega</th>
+                <th>Gerenciar</th>
+            </tr>
+
+        </thead>
+
+        <tbody id="corpo"></tbody>
+
+    </table>
+
+
+    <br>
+
+    <a href="./index.html">
+        <button>Voltar</button>
+    </a>
+
+
+    <script src="./scriptmanutencao.js"></script>
+
+</body>
+</html>
